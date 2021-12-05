@@ -53,7 +53,9 @@ namespace lab03
         }
 
         #endregion
-        
+
+        #region GUI Elements
+
         private Dictionary<String, String> ImagesList;
         private FlowLayoutPanel ImagePanel { get; set; }
 
@@ -129,6 +131,8 @@ namespace lab03
 
         public ExtendedButton GetDefaultImage() => (ExtendedButton)this.ImagePanel.Controls[0];
 
+        #endregion
+
         #region Quantizer
 
         private Quantizer Quantizer;
@@ -169,8 +173,6 @@ namespace lab03
             if (this.UncertaintyGenerated)
                 this.UncertaintyPictureBox.Refresh();
         }
-
-        public ConcurrentDictionary<(Color, Color), double> Cache = new ConcurrentDictionary<(Color, Color), double>();
 
         #endregion
 

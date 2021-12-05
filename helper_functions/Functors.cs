@@ -37,15 +37,6 @@ namespace lab03
             {
                 double distance = Math.Pow(c.R - color.R, 2) + Math.Pow(c.G - color.G, 2) + Math.Pow(c.B - color.B, 2); ;
 
-                //if (Projector.Instance.Cache.ContainsKey((color, c)))
-                //    distance = Projector.Instance.Cache[(color, c)];
-                //else
-                //{
-                //    distance = Math.Pow(c.R - color.R, 2) + Math.Pow(c.G - color.G, 2) + Math.Pow(c.B - color.B, 2);
-                //    Projector.Instance.Cache.TryAdd((color, c), distance);
-                //    Projector.Instance.Cache.TryAdd((c, color), distance);
-                //}
-
                 if (distance < min)
                 {
                     min = distance;

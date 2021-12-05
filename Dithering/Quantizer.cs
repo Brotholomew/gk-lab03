@@ -57,8 +57,6 @@ namespace lab03
 
             this.Image = img;
             this.ColorMap.LoadImage(this.Image);
-
-            // this.GeneratePopularityPalette();
         }
 
         #region Cleanup Functions

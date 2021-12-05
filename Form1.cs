@@ -100,8 +100,6 @@ namespace lab03
             {
                 Projector.Instance.ErrorDifusion = Projector.ErrorDifusionMethod.B;
             }
-
-            // Projector.Instance.GenerateUncertainty();
         }
 
         private void PaletteChoice(object sender, EventArgs e)
